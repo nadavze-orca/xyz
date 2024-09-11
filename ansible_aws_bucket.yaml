@@ -1,0 +1,6 @@
+- name: My Test Bucket
+  amazon.aws.aws_s3:
+    bucket: mytestbucket
+    mode: create
+    # The 'public-read' permission allows anyone to read the contents of the bucket, but only the owner can write to it.
+    permission: public-read
